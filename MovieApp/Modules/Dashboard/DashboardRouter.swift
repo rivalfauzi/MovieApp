@@ -19,4 +19,12 @@ class DashboardRouter: BaseRouter {
         return view
     }
     
+    func navigateToDetail(from navigation: UINavigationController, movieID: Int) {
+        let view = DetailRouter().showView()
+        view.presenter.movieId = movieID
+        view.hidesBottomBarWhenPushed = true
+        
+        navigation.pushViewController(view, animated: true)
+    }
+    
 }

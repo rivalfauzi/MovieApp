@@ -2,3 +2,7 @@
 "general.upcoming" = "Akan Datang";
 "general.top_search" = "Pencarian";
 "general.download" = "Unduh";
+
+"detail.movie.title" = "Detail Film";
+"detail.minutes.label" = "Menit";
+"detail.trailer.label" = "Cuplikan";

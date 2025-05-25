@@ -51,5 +51,8 @@ class DashboardPresenter: BasePresenter {
         fetchMovieData(page: currentPage)
     }
 
+    func navigateToDetail(from navigation: UINavigationController, movieId: Int) {
+        router.navigateToDetail(from: navigation, movieID: movieId)
+    }
 }
 

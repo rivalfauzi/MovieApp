@@ -2,3 +2,7 @@
 "general.upcoming" = "Coming Soon";
 "general.top_search" = "Top Search";
 "general.download" = "Download";
+
+"detail.movie.title" = "Detail Movie";
+"detail.minutes.label" = "Minutes";
+"detail.trailer.label" = "Trailer";

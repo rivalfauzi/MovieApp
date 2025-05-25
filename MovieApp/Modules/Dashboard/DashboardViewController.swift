@@ -33,7 +33,7 @@ class DashboardViewController: BaseViewController {
 
 extension DashboardViewController {
     private func setupView() {
-        title = "SHOWLIGHT"
+        title = "general.dashboard".localized
         setupCollectionView()
     }
     
@@ -120,8 +120,10 @@ extension DashboardViewController: SkeletonCollectionViewDataSource {
 
 extension DashboardViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let navigation = self.navigationController else { return }
         let selectedMovie = presenter.movies[indexPath.item]
-        print("Selected movie: \(selectedMovie.title)")
+        
+        presenter.navigateToDetail(from: navigation  , movieId: selectedMovie.id)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

@@ -87,7 +87,7 @@ final class CoverCell: UICollectionViewCell {
         coverTitleLabel.text = coverMovie.title
         ratingLabel.text = "⭐️ \(voteAverage)"
         
-        if let url = coverMovie.posterURL {
+        if let url = coverMovie.backdropURL {
             loadImage(from: url, into: coverImageView)
         }
     }

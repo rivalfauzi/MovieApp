@@ -12,24 +12,19 @@ import Alamofire
 class DashboardInteractor: BaseInteractor {
     public func getListMovie(page: Int) -> Observable<MovieResponse> {
         let listMovie = PublishSubject<MovieResponse>()
-        let url = MovieURL.gettrendinglist.url() + "?page=\(page)"
+        let url = MovieURL.nowplaying.url() + "?page=\(page)"
         
         ApiRequest.shared.request(url, method: .get, headers: nil) { response in
-            switch response.result {
-            case .success(let json):
-                if let value = response.data {
-                    do {
-                        let res = try JSONDecoder().decode(MovieResponse.self, from: value)
-                        listMovie.onNext(res)
-                    } catch let jsonErr {
-                        print("error serializing json:", jsonErr)
-                    }
-                } else {
-                    print("error get sof")
-                }
-            case .failure(let error):
-                print("Request failed with error:", error)
+            guard case .success = response.result,
+                  let data = response.data,
+                  let res = try? JSONDecoder().decode(MovieResponse.self, from: data)
+            else {
+                let error = NSError(domain: "com.yourapp.network", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to fetch or decode movie"])
+                listMovie.onError(error)
+                return
             }
+            
+            listMovie.onNext(res)
         }
         
         return listMovie
