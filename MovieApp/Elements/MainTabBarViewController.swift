@@ -17,7 +17,7 @@ class MainTabBarViewController: UITabBarController {
 extension MainTabBarViewController {
     private func setupView() {
         let dashboardViewController = UINavigationController(rootViewController: DashboardRouter().showView())
-        let upcomingViewController = UINavigationController(rootViewController: UpcomingViewController())
+        let upcomingViewController = UINavigationController(rootViewController: UpcomingRouter().showView())
         let topSearchViewColntroller = UINavigationController(rootViewController: TopSearchViewController())
         let downloadScreenViewController = UINavigationController(rootViewController: DownloadScreenViewController())
         

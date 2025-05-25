@@ -55,7 +55,7 @@ class DetailViewController: BaseViewController {
 
     private let linkButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Homepage", for: .normal)
+        button.setTitle("detail.homepage.button".localized, for: .normal)
         button.tintColor = .white
         button.backgroundColor = .secondaryLabel
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
@@ -66,7 +66,7 @@ class DetailViewController: BaseViewController {
     }()
 
     private let segmentedControl: UISegmentedControl = {
-        let control = UISegmentedControl(items: ["Info", "Reviews", "Trailer"])
+        let control = UISegmentedControl(items: ["detail.info.label".localized, "detail.reviews.label".localized, "detail.trailer.label".localized])
         control.selectedSegmentIndex = 0
         control.translatesAutoresizingMaskIntoConstraints = false
         return control
@@ -81,7 +81,7 @@ class DetailViewController: BaseViewController {
         label.numberOfLines = 1
         label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Storyline"
+        label.text = "detail.storyline.label".localized
         return label
     }()
     
@@ -290,7 +290,7 @@ extension DetailViewController {
             productionStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
 
             let companyTitle = UILabel()
-            companyTitle.text = "Production Companies"
+            companyTitle.text = "detail.companies.title".localized
             companyTitle.font = .boldSystemFont(ofSize: 16)
             companyTitle.textColor = .label
             productionStackView.addArrangedSubview(companyTitle)
@@ -364,7 +364,7 @@ extension DetailViewController {
     
     private func showNoTrailerMessage() {
         let label = UILabel()
-        label.text = "Trailer tidak tersedia"
+        label.text = "detail.no_trailer.label".localized
         label.textAlignment = .center
         label.textColor = .secondaryLabel
         label.translatesAutoresizingMaskIntoConstraints = false

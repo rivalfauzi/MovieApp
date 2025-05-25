@@ -6,3 +6,10 @@
 "detail.movie.title" = "Detail Film";
 "detail.minutes.label" = "Menit";
 "detail.trailer.label" = "Cuplikan";
+"detail.homepage.button" = "Tautan";
+"detail.info.label" = "Info";
+"detail.reviews.label" = "Ulasan";
+"detail.storyline.label" = "Alur Cerita";
+"detail.companies.title" = "Perusahaan Produksi";
+
+"detail.no_trailer.label" = "Cuplikan tidak tersedia";

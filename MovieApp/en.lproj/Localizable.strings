@@ -6,3 +6,10 @@
 "detail.movie.title" = "Detail Movie";
 "detail.minutes.label" = "Minutes";
 "detail.trailer.label" = "Trailer";
+"detail.homepage.button" = "Homepage";
+"detail.info.label" = "Info";
+"detail.reviews.label" = "Reviews";
+"detail.storyline.label" = "Storyline";
+"detail.companies.title" = "Production Companies";
+
+"detail.no_trailer.label" = "Trailer not available";

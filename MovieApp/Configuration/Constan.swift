@@ -14,6 +14,7 @@ enum MovieURL: String {
     case detail = "movie/"
     case review = "movie/{movie_id}/reviews"
     case video = "movie/{movie_id}/videos"
+    case upcoming = "movie/upcoming"
     
     func url() -> String {
         return "\(BASE_URL)\(self.rawValue)"
