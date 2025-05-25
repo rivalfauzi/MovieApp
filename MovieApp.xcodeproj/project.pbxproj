@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		463020212DE2C76E0099CAB5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 463020202DE2C76E0099CAB5 /* RxSwift */; };
+		4630202C2DE2EB710099CAB5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4630202B2DE2EB710099CAB5 /* Alamofire */; };
+		463020472DE2F91D0099CAB5 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 463020462DE2F91D0099CAB5 /* SkeletonView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		46F8ED2F2DE2A3960057B565 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -30,7 +36,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		46F8ED402DE2A3960057B565 /* Exceptions for "MovieApp" folder in "MovieApp" target */ = {
+		46F8EDD82DE2BDDE0057B565 /* Exceptions for "MovieApp" folder in "MovieApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +49,7 @@
 		46F8ED1A2DE2A3940057B565 /* MovieApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				46F8ED402DE2A3960057B565 /* Exceptions for "MovieApp" folder in "MovieApp" target */,
+				46F8EDD82DE2BDDE0057B565 /* Exceptions for "MovieApp" folder in "MovieApp" target */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463020212DE2C76E0099CAB5 /* RxSwift in Frameworks */,
+				463020472DE2F91D0099CAB5 /* SkeletonView in Frameworks */,
+				4630202C2DE2EB710099CAB5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,9 @@
 			);
 			name = MovieApp;
 			packageProductDependencies = (
+				463020202DE2C76E0099CAB5 /* RxSwift */,
+				4630202B2DE2EB710099CAB5 /* Alamofire */,
+				463020462DE2F91D0099CAB5 /* SkeletonView */,
 			);
 			productName = MovieApp;
 			productReference = 46F8ED182DE2A3940057B565 /* MovieApp.app */;
@@ -205,9 +217,15 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 46F8ED0F2DE2A3940057B565;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4630201F2DE2C76E0099CAB5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4630202A2DE2EB710099CAB5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				463020452DE2F91D0099CAB5 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 46F8ED192DE2A3940057B565 /* Products */;
 			projectDirPath = "";
@@ -294,7 +312,6 @@
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +339,6 @@
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -343,6 +359,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -406,6 +423,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -569,6 +587,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4630201F2DE2C76E0099CAB5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		4630202A2DE2EB710099CAB5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		463020452DE2F91D0099CAB5 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/s2mr/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		463020202DE2C76E0099CAB5 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4630201F2DE2C76E0099CAB5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		4630202B2DE2EB710099CAB5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4630202A2DE2EB710099CAB5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		463020462DE2F91D0099CAB5 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463020452DE2F91D0099CAB5 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46F8ED102DE2A3940057B565 /* Project object */;
 }
