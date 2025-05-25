@@ -121,9 +121,13 @@ extension DashboardViewController: SkeletonCollectionViewDataSource {
 extension DashboardViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let navigation = self.navigationController else { return }
-        let selectedMovie = presenter.movies[indexPath.item]
+        var selectedMovie = presenter.movies[indexPath.item]
         
-        presenter.navigateToDetail(from: navigation  , movieId: selectedMovie.id)
+        if indexPath.section == 0 {
+            selectedMovie = presenter.coverMovie ?? presenter.movies[indexPath.item] 
+        }
+        
+        presenter.navigateToDetail(from: navigation, movieId: selectedMovie.id)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
