@@ -16,6 +16,11 @@ class ApiRequest {
         if !Reachability.shared.isConnected {
             let error = AFError.sessionInvalidated(error: URLError(.notConnectedToInternet))
             let errorResponse = errorResponse(error)
+            
+            DispatchQueue.main.async {
+                showNoConnectionAlert()
+            }
+            
             completion(errorResponse)
             return
         }

@@ -48,3 +48,21 @@ func loadImage(from urlString: String, into imageView: UIImageView) {
     }.resume()
 }
 
+func showNoConnectionAlert() {
+    guard let topVC = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController else { return }
+    
+    var presenter = topVC
+    while let presented = presenter.presentedViewController {
+        presenter = presented
+    }
+    
+    let alert = UIAlertController(
+        title: "No Internet Connection",
+        message: "Please check your internet connection and try again.",
+        preferredStyle: .alert
+    )
+    
+    alert.addAction(UIAlertAction(title: "OK", style: .default))
+    presenter.present(alert, animated: true)
+}
+
