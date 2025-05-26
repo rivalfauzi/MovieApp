@@ -113,9 +113,3 @@ In Xcode:
 Currently supports:
 - English 🇺🇸
 - Bahasa Indonesia 🇮🇩
-
----
-
-## 📄 License
-
-MIT License. See `LICENSE` file for details.
