@@ -99,11 +99,12 @@ In Xcode:
 
 ## 📷 Screenshots
 
-![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 20 17](https://github.com/user-attachments/assets/a2ae68bc-87e4-4ac3-9ae6-8d80287bd804)
-![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 21 05](https://github.com/user-attachments/assets/6f95746c-ec27-49eb-ba1d-2815fdc01ff9)
-![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 20 59](https://github.com/user-attachments/assets/1c101f43-ede3-459b-be6b-1649d6b97bd1)
-![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 21 14](https://github.com/user-attachments/assets/362aa1db-a4b9-472e-9bc5-631042a65726)
-
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/a2ae68bc-87e4-4ac3-9ae6-8d80287bd804" width="22%" />
+  <img src="https://github.com/user-attachments/assets/6f95746c-ec27-49eb-ba1d-2815fdc01ff9" width="22%" />
+  <img src="https://github.com/user-attachments/assets/1c101f43-ede3-459b-be6b-1649d6b97bd1" width="22%" />
+  <img src="https://github.com/user-attachments/assets/362aa1db-a4b9-472e-9bc5-631042a65726" width="22%" />
+</p>
 
 ---
 
