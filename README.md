@@ -25,7 +25,10 @@ A simple iOS application built with Swift that displays movie information using 
 7. **Localized Based on System Language**  
    The app automatically adapts to the user's device language (e.g., English, Indonesian, etc.).
 
-8. **Reactive Programming with RxSwift**  
+8. **Dark Mode and Light Mode Support**  
+   Fully supports both system appearance modes (dark & light), following the user’s iOS system settings.
+
+9. **Reactive Programming with RxSwift**  
    All asynchronous operations are managed using **RxSwift** to promote a clean and responsive UI.
 
 ---
@@ -84,6 +87,10 @@ In Xcode:
      ```
      https://github.com/Alamofire/Alamofire.git
      ```
+   - **SkeletonView**  
+     ```
+     https://github.com/s2mr/SkeletonView.git
+     ```
 
 4. Choose the latest version or set specific version ranges.
 5. Click **Add Package**.
@@ -92,7 +99,11 @@ In Xcode:
 
 ## 📷 Screenshots
 
-*(Add screenshots of the main features here)*
+![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 20 17](https://github.com/user-attachments/assets/a2ae68bc-87e4-4ac3-9ae6-8d80287bd804)
+![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 21 05](https://github.com/user-attachments/assets/6f95746c-ec27-49eb-ba1d-2815fdc01ff9)
+![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 20 59](https://github.com/user-attachments/assets/1c101f43-ede3-459b-be6b-1649d6b97bd1)
+![Simulator Screenshot - iPhone 16 Pro - 2025-05-26 at 09 21 14](https://github.com/user-attachments/assets/362aa1db-a4b9-472e-9bc5-631042a65726)
+
 
 ---
 
